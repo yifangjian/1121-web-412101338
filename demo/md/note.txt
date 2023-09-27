@@ -1,0 +1,5 @@
+git status
+git add .
+git commit -m "write message"
+git push
+git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2023-09-26" (depending on the starting date)
