@@ -1,0 +1,54 @@
+body {
+    background-color: bisque;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid blue;
+    padding: 1.5rem 2rem ;
+    margin: 3rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.card-1 {
+    border-color: #ff69a6;
+}
+
+.card-2 {
+    border-color: #63a8ff;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.card-1 .icon {
+    background: #ff69a6;
+}
+
+.card-2 .icon {
+    background: #63a8ff;
+}
+
+.btn{
+    border: transparent;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    border-radius: 0.3rem;
+}
+
+.btn-1{
+    color: #ff69a6;
+    background-color: rgba(255,105,166,0.15);
+    border: 1px solid rgba(255,105,166,0.5) ;
+}
+
+.btn-2{
+    color: #63a8ff;
+    background-color: rgba(99,168,255,0.15);
+    border: 1px solid rgba(99,168,255,0.5);
+}
