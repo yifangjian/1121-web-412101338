@@ -35,8 +35,8 @@ Nav
     display: flex;
     align-items: center;
     height: 3rem;
-    background-color: rgba(0,0, 0, 0.01);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(87, 225, 235, 0.2);
+    border-bottom: 1px solid rgba(163, 212, 217, 0.2);
 }
 
 .nav-center {
@@ -78,9 +78,7 @@ Nav
     width: 100%;
     z-index: 2;
     background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    
-
+    box-shadow: 0 5px 15px rgba(56, 86, 221, 0.1);
 }
 
 /*
