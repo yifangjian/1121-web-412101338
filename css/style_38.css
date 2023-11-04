@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brown: #5B4B00 ;
+    --brown-dark: #AE8F00 ;
+    --yellow-light: #FFF8D7; 
+    --yellow: #FFED97 ;
+    --yellow-dark: #FFDC35 ;
+    --letter-spacing: 2px;
+}
+
+
+body {
+    background-color: var(--yellow);
+    color: var(--brown);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*
+**************
+Nav
+**************
+*/
+
+.nav { 
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    background-color: rgba(87, 225, 235, 0.2);
+    border-bottom: 1px solid rgba(163, 212, 217, 0.2);
+}
+
+.nav-center {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-header h4 {
+    font-size: 0.8rem;
+    color: rgba( 0, 0, 0, 0.5)
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+}
+
+.nav-links li a:hover {
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 500;
+    border-bottom: 1px solid rgb(4, 57, 58);
+    padding-bottom: 3px;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(56, 86, 221, 0.1);
+}
