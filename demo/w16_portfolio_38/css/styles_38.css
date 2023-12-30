@@ -432,6 +432,70 @@ About
 }
 /*
 =============== 
+projects
+===============
+*/
+.projects .section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.projects-text {
+  width: 80vw;
+  margin: 0 auto; /*讓它可以置中*/
+}
+.projects .underline {
+  margin-bottom: 1.5rem;
+}
+.projects-center .project {
+  position: relative;
+  margin-bottom: 2rem;
+  background-color: var(--clr-primary-5);
+  border-radius: var(--radius);
+}
+.projects-center .project::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 0.25rem solid var(--clr-white);
+  opacity: 0;
+  transition: var(--transition);
+  border-radius: var(--radius);
+}
+.projects-center .project:hover::after {
+  opacity: 1;
+  transform: scale(0.8);
+}
+.projects-center .project-img {
+  height: 15rem;
+  object-fit: cover;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.projects-center .project-info {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /*挪位置*/
+  color: var(--clr-white);
+  opacity: 0; /*設定可見度*/
+  transition: var(--transition); /*字的變化*/
+}
+.projects-center .project-info p {
+  color: var(--clr-white);
+}
+.projects-center:hover .project-info {
+  opacity: 1;
+}
+.projects-center:hover .project-img {
+  opacity: 0.2;
+}
+
+/*
+=============== 
 resume
 ===============
 */
