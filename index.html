@@ -1,30 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style_38.css">
-    <title>My Landing Page</title>
-</head>
-<body>
-    <nav class="nav">
-        <class class="nav-center">
-            <div class="nav-header">
-                <h4>簡宜芳</h4>
-            </div>
-            <ul class="nav-links">
-                <li>
-                    <a href="./demo/megamenu.html">ClassDemo</a>
-                </li>
-                <li>
-                    <a href="https://github.com/yifangjian/1121-web-412101338">Github</a>
-                </li>
-                <li>
-                    <a href="https://1121-web-412101338.vercel.app/">Vercel</a>
-                </li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yi-fang || Home</title>
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style_38.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/logo2.svg" class="nav-logo" alt="nav logo" />
         </div>
+        <!-- nav-links -->
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./demo/megamenu.html">ClassDemo</a>
+        </li>
+        <li>
+            <a href="https://github.com/yifangjian/1121-web-412101338">Github</a>
+        </li>
+        <li>
+            <a href="https://1121-web-412101338.vercel.app/">Vercel</a>
+        </li>
+        </ul>
+        <button class="nav-btn" id="nav-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </nav>
-    <script src="./js/script_38.js"></script>
-</body>
+    <!-- end of navbar -->
+
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li>
+            <a href="./demo.html">Home</a>
+          </li>
+          <li>
+            <a href="./demo/megamenu.html">ClassDemo</a>
+        </li>
+        <li>
+            <a href="https://github.com/yifangjian/1121-web-412101338">Github</a>
+        </li>
+        <li>
+            <a href="https://1121-web-412101338.vercel.app/">Vercel</a>
+        </li>
+        </ul>
+        </ul>
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa-brands fa-line"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+
+    <!-- header -->
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+          <div class="underline"></div>
+          <h1>i'm Yi-fang</h1>
+          <h4>A student majoring in Japanese at Tamkang University</h4>
+          <button onclick="scrollToTarget()" class="btn">MORE</button>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com/yifang.jian.90" class="social-icon">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yfj0515/?hl=zh-tw" class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/yifangjian/1121-web-412101338" class="social-icon">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@hinase0515" class="social-icon">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linevoom.line.me/user/_dSE-OamANE8_QFUoxUDYH7150oeE6Q3f1iq-M7A?utm_medium=windows&utm_source=desktop&utm_campaign=Profile" class="social-icon">
+                <i class="fa-brands fa-line"></i>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class="hero-img">
+          <img
+            src="./images/me-img.png"
+            alt="about img"
+            class="hero-photo"
+          />
+        </article>
+      </div>
+    </header>
+
+    <!-- end of header -->
+
+    <!--about-->
+    <section class="section about">
+      <div class="section-center about-center">
+        <!--about img-->
+        <article class="about-img">
+          <img src="./images/me-about-img.png" class="hero-photo" alt="about img">
+        </article>
+        <!--about info-->
+        <article class="about-info">
+          <!--section title-->
+          <div class="section-title about-title">
+            <h2>about</h2>
+            <div class="underline"></div>
+          </div>
+          <!--end of section title-->
+          <p>簡宜芳と申します。○○から来ました。２０歳です。淡江大学日本語の学生です。性格は明るくて朗らかです。責任感、そして適応能力が強いと思います。音楽を聴いたり、歌を歌ったりするのが好きです。暇なとき、小説を読みます。日本語を勉強していますが、日本文化にも興味があります。将来は、日本語に関わる仕事をしたいです。どうぞ、よろしくお願いします。</p>
+          <a href="about.html" class="btn">about me</a>
+        </article>
+      </div>
+    </section>
+    <!--end of about-->
+
+     <!-- resume -->
+     <section class="resume" id="target-section">
+      <div class="container">
+        <div class="header">
+          <div class="img-area">
+              <img src="./images/me-about-img.png" alt="">
+          </div>
+          <h1>YI-FANG JIAN</h1>
+          <h3>A STUDENT MAJORING IN JAPANESE</h3>
+        </div>
+        <div class="main">
+          <div class="left">
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> JIAN YIFANG</p>
+            <p><strong>Age:</strong> 20</p>
+            <p><strong>Email:</strong> yifangjian015@gmail.com</p>
+            <p><strong>Phone:</strong>0981732097</p>
+            <h2>Skills</h2>
+            <ul>
+              <li>TRANSLATION</li>
+              <li>INTERPRETATION</li>
+              <li>MULTILINGUALISM</li>
+              <li>SUBTITLING</li>
+              <li>CULTURAL COMPETENCE</li>
+              <li>SIMULTANEOUS INTERPRETATION</li>
+            </ul>
+            
+          </div>
+          
+          <div class="right">
+            <h2>LEARNING EXPERIENCE</h2>
+            <h3>TAMKANG UNERVERSITY</h3>
+            <p><strong>Position:</strong> JAPANESE</p>
+            <p><strong>Duration:</strong> 2023-2026</p>
+            <ul>
+              <li>Achieved proficiency in Japanese language, including reading, writing, and conversational skills</li>
+              <li>Conducted in-depth research on Japanese culture, history, and societal norms as part of academic coursework</li>
+              <li>Participated in language exchange programs to enhance practical communication skills in Japanese</li>
+              <li>Completed translation projects involving Japanese-to-English and English-to-Japanese texts</li>
+            </ul> <br>
+            
+          </div>
+        </div>
+      </div> 
+      </section>
+  
+    <!-- end of resume-->
+
+
+    <!-- projects-->  
+    <section class="section projects">
+      <div class="section-title">
+        <h2>latest works</h2>
+        <div class="underline"></div>
+        <p class="projects-text">
+          Here are some works from classroom.
+        </p>
+      </div>
+      <div class="section-center projects-center">
+        <a href="./demo/w04_38_card_demo/index.html" class="project-1">
+          <article class="project">
+            <img src="./images/project1.png" class="project-img" alt="single project">
+            <div class="project-info">
+              <h4>Card</h4>
+              <p>W4</p>
+            <div>
+          </div>
+          </article>
+        </a>
+        <a href="./demo/w06_38_blog/index.html" class="project-2">
+          <article class="project">
+            <img src="./images/project2.png" class="project-img" alt="single project">
+            <div class="project-info">
+              <h4>Blogs</h4>
+              <p>W6</p>
+              <div>
+            </div>
+          </article>
+        </a>
+        <a href="https://youtu.be/cKjrxvXP2vc?si=ccY-EGUhb3KVBUb0" class="project-3">
+        <article class="project">
+          <img src="./images/project3.png" class="project-img" alt="">
+          <div class="project-info">
+            <h4>SDGs</h4>
+            <p>Japanese Reading</p>
+            <div>
+          </div>
+        </article>
+        </a>
+        <a href="" class="project-4">
+          <article class="project">
+            <img src="./images/project4.png" class="project-img" alt="single project">
+            <div class="project-info">
+              <h4>New Year's Card</h4>
+              <p>Japanese Reading</p>
+              <div>
+            </div>
+          </article>
+          </a>
+      </div>
+    </section>
+    <!--end of projects-->
+
+  
+    <!--gallery-->
+    <section class="gallery">
+
+      <div class="images">
+        <span style="--i:1">
+          <img src="./images/gallery1.jpg" alt="" />
+        </span>
+        <span style="--i:2">
+          <img src="./images/gallery2.jpg" alt="" />
+        </span>
+        <span style="--i:3">
+          <img src="./images/gallery3.jpg" alt="" />
+        </span>
+        <span style="--i:4">
+          <img src="./images/gallery4.jpg" alt="" />
+        </span>
+        <span style="--i:5">
+          <img src="./images/gallery5.jpg" alt="" />
+        </span>
+        <span style="--i:6">
+          <img src="./images/gallery6.jpg" alt="" />
+        </span>
+        <span style="--i:7">
+          <img src="./images/gallery7.jpg" alt="" />
+        </span>
+        <span style="--i:8">
+          <img src="./images/gallery8.jpg" alt="" />
+        </span>
+      </div>
+    </section>
+    
+    <!--end of gallery-->
+
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.facebook.com/yifang.jian.90" class="social-icon">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/yfj0515/?hl=zh-tw" class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yifangjian/1121-web-412101338" class="social-icon">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@hinase0515" class="social-icon">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://linevoom.line.me/user/_dSE-OamANE8_QFUoxUDYH7150oeE6Q3f1iq-M7A?utm_medium=windows&utm_source=desktop&utm_campaign=Profile" class="social-icon">
+            <i class="fa-brands fa-line"></i>
+          </a>
+        </li>
+      </ul>
+      <p>&copy; <span id="date"></span> Yi-fang . all rights resevered</p>
+    </footer>
+    <!-- end of footer -->
+    <script src="./js/final_38.js"></script>
+
+    
+  </body>
 </html>
